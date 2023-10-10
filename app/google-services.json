@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "687125141211",
+    "project_id": "flory-b2614",
+    "storage_bucket": "flory-b2614.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687125141211:android:eddc6bff0bad613c331efe",
+        "android_client_info": {
+          "package_name": "com.example.flory"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5XjMhG9GBvZCer6CzCQoHRcmbN-el4lM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

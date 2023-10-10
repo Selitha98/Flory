@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="71dp"
+        android:src="@drawable/flory" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="478dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="26dp"
+        android:padding="2dp"
+        android:src="@drawable/popup" />
+
+    <TextView
+        android:id="@+id/login_title"
+        android:layout_width="wrap_content"
+        android:layout_height="107dp"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="378dp"
+        android:fontFamily="@font/ketibah"
+        android:padding="0dp"
+        android:text="Register"
+        android:textColor="#000000"
+        android:textSize="80sp" />
+
+    <EditText
+        android:id="@+id/reg_email"
+        android:layout_width="263dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_marginStart="53dp"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="291dp"
+        android:background="@drawable/email_bg"
+        android:ems="10"
+        android:hint="Enter your email..."
+        android:inputType="textEmailAddress"
+        android:paddingStart="50dp"
+        android:paddingEnd="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080" />
+
+    <EditText
+        android:id="@+id/reg_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="213dp"
+        android:background="@drawable/password_bg"
+        android:ems="10"
+        android:hint="Enter password..."
+        android:inputType="textPassword"
+        android:paddingStart="50dp"
+        android:paddingEnd="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#808080" />
+
+    <ImageButton
+        android:id="@+id/register_btn"
+        android:layout_width="204dp"
+        android:layout_height="55dp"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_marginStart="82dp"
+        android:layout_marginEnd="83dp"
+        android:layout_marginBottom="139dp"
+        android:background="@null"
+        app:srcCompat="@drawable/register_btn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="99dp"
+        android:fontFamily="@font/ketibah"
+        android:text="Already have an account ?"
+        android:textColor="#242A28"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/loginlink"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:layout_alignBottom="@+id/imageView4"
+        android:layout_marginStart="237dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="106dp"
+        android:fontFamily="@font/ketibah"
+        android:text="LOGIN"
+        android:textColor="#425F57"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
