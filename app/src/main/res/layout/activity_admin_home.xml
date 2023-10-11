@@ -14,7 +14,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="65dp"
+        android:layout_marginTop="53dp"
         android:background="@null"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
@@ -43,7 +43,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="55dp"
-        android:layout_marginBottom="292dp"
+        android:layout_marginBottom="176dp"
         android:background="@null"
         android:src="@drawable/admin_h_agro_icon" />
 
@@ -53,8 +53,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="71dp"
-        android:layout_marginBottom="287dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="176dp"
+        android:layout_toStartOf="@+id/imageButton2"
         android:background="@null"
         android:src="@drawable/admin_h_flower_icon" />
 
@@ -64,8 +66,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="61dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="301dp"
+        android:layout_marginEnd="97dp"
+        android:layout_toStartOf="@+id/imageButton5"
         android:background="@null"
         android:src="@drawable/admin_h_user_icon" />
 
@@ -75,9 +79,115 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="299dp"
+        android:layout_marginTop="301dp"
         android:layout_marginEnd="55dp"
         android:background="@null"
         android:src="@drawable/admin_h_diseases_icon" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_screen_pp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="142dp"
+        android:fontFamily="@font/ketibah"
+        android:text="Welcome,"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="146dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/home_screen_pp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="124dp"
+        android:fontFamily="@font/ketibah"
+        android:text="Admin"
+        android:textColor="#000000"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="85dp"
+        android:layout_height="51dp"
+        android:layout_below="@+id/home_screen_pp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="269dp"
+        android:layout_marginEnd="256dp"
+        android:fontFamily="@font/ketibah"
+        android:text="Users"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/home_screen_pp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="227dp"
+        android:layout_marginTop="267dp"
+        android:layout_marginEnd="46dp"
+        android:fontFamily="@font/ketibah"
+        android:text="Diseases"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="120dp"
+        android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="224dp"
+        android:layout_marginBottom="131dp"
+        android:fontFamily="@font/ketibah"
+        android:text="Flowers"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="84dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="247dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="132dp"
+        android:fontFamily="@font/ketibah"
+        android:text="Agro"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="140dp"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="217dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="97dp"
+        android:fontFamily="@font/ketibah"
+        android:text="Patholigts"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
 
 </RelativeLayout>

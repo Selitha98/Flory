@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nav_bg"
+    tools:context=".AdminNav">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="321dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="23dp"
+        android:background="@drawable/circle_background"
+        app:srcCompat="@drawable/close_icon_black" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="146dp"
+        android:layout_height="124dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="124dp"
+        app:srcCompat="@drawable/nav_user_icon" />
+
+    <ImageButton
+        android:id="@+id/admin_nav_users_btn"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="311dp"
+        android:padding="0dp"
+        android:background="@null"
+        app:srcCompat="@drawable/admin_nav_users_btn" />
+
+    <ImageButton
+        android:id="@+id/admin_nav_agro_btn"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="371dp"
+        android:background="@null"
+        android:padding="0dp"
+        app:srcCompat="@drawable/admin_nav_agro_btn" />
+
+    <ImageButton
+        android:id="@+id/admin_nav_flower_btn"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="431dp"
+        android:background="@null"
+        android:padding="0dp"
+        app:srcCompat="@drawable/admin_nav_flower_btn" />
+
+    <ImageButton
+        android:id="@+id/admin_nav_diseases_btn"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="491dp"
+        android:background="@null"
+        android:padding="0dp"
+        app:srcCompat="@drawable/admin_nav_diseases_btn" />
+
+    <ImageButton
+        android:id="@+id/admin_nav_logout"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="551dp"
+        android:background="@null"
+        android:padding="0dp"
+        app:srcCompat="@drawable/nav_logout" />
+
+</RelativeLayout>
