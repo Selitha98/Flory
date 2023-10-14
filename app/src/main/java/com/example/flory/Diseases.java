@@ -2,6 +2,7 @@ package com.example.flory;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -9,7 +10,6 @@ import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.SearchView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.database.DataSnapshot;
@@ -40,6 +40,10 @@ public class Diseases extends AppCompatActivity {
 
         fab = findViewById(R.id.fab);
         recyclerView = findViewById(R.id.recyclerView);
+        searchView = findViewById(R.id.search);
+        searchView.clearFocus();
+
+
 
         GridLayoutManager gridLayoutManager = new GridLayoutManager(Diseases.this, 1);
         recyclerView.setLayoutManager(gridLayoutManager);
@@ -54,7 +58,7 @@ public class Diseases extends AppCompatActivity {
         adapter = new MyAdapter(Diseases.this, dataList);
         recyclerView.setAdapter(adapter);
 
-        databaseReference = FirebaseDatabase.getInstance().getReference("Android Tutorials");
+        databaseReference = FirebaseDatabase.getInstance().getReference("Flower Diseases");
         dialog.show();
         eventListener = databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -74,17 +78,17 @@ public class Diseases extends AppCompatActivity {
             }
         });
 
-//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
-//            @Override
-//            public boolean onQueryTextSubmit(String query) {
-//                return false;
-//            }
-//            @Override
-//            public boolean onQueryTextChange(String newText) {
-////                searchList(newText);
-//                return true;
-//            }
-//        });
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+            @Override
+            public boolean onQueryTextChange(String newText) {
+                searchList(newText);
+                return true;
+            }
+        });
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,5 +100,15 @@ public class Diseases extends AppCompatActivity {
         });
 
 
+    }
+
+    public void searchList(String text){
+        ArrayList<DiseasesData> searchList = new ArrayList<>();
+        for (DiseasesData dataClass: dataList){
+            if (dataClass.getDiseaseTitle().toLowerCase().contains(text.toLowerCase())){
+                searchList.add(dataClass);
+            }
+        }
+        adapter.searchDataList(searchList);
     }
 }
