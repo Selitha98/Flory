@@ -37,7 +37,7 @@
         app:srcCompat="@drawable/home_screen_pp" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/admin_h_agro_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -48,7 +48,7 @@
         android:src="@drawable/admin_h_agro_icon" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/admin_h_flower_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -56,12 +56,12 @@
         android:layout_marginStart="51dp"
         android:layout_marginEnd="92dp"
         android:layout_marginBottom="176dp"
-        android:layout_toStartOf="@+id/imageButton2"
+        android:layout_toStartOf="@+id/admin_h_agro_icon"
         android:background="@null"
         android:src="@drawable/admin_h_flower_icon" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/admin_h_user_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -69,12 +69,12 @@
         android:layout_marginStart="44dp"
         android:layout_marginTop="301dp"
         android:layout_marginEnd="97dp"
-        android:layout_toStartOf="@+id/imageButton5"
+        android:layout_toStartOf="@+id/admin_h_diseases_icon"
         android:background="@null"
         android:src="@drawable/admin_h_user_icon" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/admin_h_diseases_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"

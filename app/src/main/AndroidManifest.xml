@@ -5,7 +5,9 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="false" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -18,27 +20,27 @@
         android:theme="@style/Theme.Flory"
         tools:targetApi="31">
         <activity
-            android:name=".Diseases"
-            android:exported="false" >
-
-        </activity>
-        <activity
-            android:name=".Prediction"
+            android:name=".DiseasesDetails"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".UploadDiseases"
+            android:exported="true">
+
         </activity>
         <activity
-            android:name=".AdminNav"
-            android:exported="false"/>
+            android:name=".AgroPathologist"
+            android:exported="false" />
         <activity
-            android:name=".UserNav"
-            android:exported="false"/>
+            android:name=".Flowers"
+            android:exported="false" />
         <activity
-            android:name=".AdminHome"
+            android:name=".Users"
+            android:exported="true" />
+        <activity
+            android:name=".Diseases"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -46,16 +48,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".Prediction"
+            android:exported="false" />
+        <activity
+            android:name=".AdminNav"
+            android:exported="false" />
+        <activity
+            android:name=".UserNav"
+            android:exported="false" />
+        <activity
+            android:name=".AdminHome"
+            android:exported="true" />
         <activity
             android:name=".Home"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".Register"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="true" />
     </application>
 
 </manifest>
