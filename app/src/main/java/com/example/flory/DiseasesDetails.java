@@ -69,7 +69,7 @@ public class DiseasesDetails extends AppCompatActivity {
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DiseasesDetails.this, UploadDiseases.class)
+                Intent intent = new Intent(DiseasesDetails.this, UpdateDiseases.class)
                         .putExtra("Title", detailTitle.getText().toString())
                         .putExtra("Description", detailDesc.getText().toString())
                         .putExtra("Treatments", detailTreat.getText().toString())

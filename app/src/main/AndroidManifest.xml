@@ -20,16 +20,14 @@
         android:theme="@style/Theme.Flory"
         tools:targetApi="31">
         <activity
+            android:name=".UpdateDiseases"
+            android:exported="false" />
+        <activity
             android:name=".DiseasesDetails"
-            android:exported="true">
-
-        </activity>
-
+            android:exported="true"></activity>
         <activity
             android:name=".UploadDiseases"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".AgroPathologist"
             android:exported="false" />
@@ -41,7 +39,7 @@
             android:exported="true" />
         <activity
             android:name=".Diseases"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
