@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".UsersUpload">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border_main"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update User"
+                android:textAlignment="center"
+                android:textColor="@color/green_primary"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/uploadImage"
+                android:layout_width="231dp"
+                android:layout_height="181dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="30dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/user_pp" />
+
+            <EditText
+                android:id="@+id/update_username"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="49dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/user_bg"
+                android:ems="10"
+                android:hint="Update username..."
+                android:inputType="textEmailAddress"
+                android:paddingStart="50dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+
+            <EditText
+                android:id="@+id/update_phone"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="49dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/phone_bg_new"
+                android:ems="10"
+                android:hint="Update phone..."
+                android:inputType="textEmailAddress"
+                android:paddingStart="50dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+
+            <EditText
+                android:id="@+id/update_email"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="49dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/email_bg"
+                android:ems="10"
+                android:hint="Update your email..."
+                android:inputType="textEmailAddress"
+                android:paddingStart="50dp"
+                android:paddingEnd="10dp"
+                android:textColor="#000000"
+                android:textColorHint="#808080" />
+
+
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#808080"
+                android:textSize="18sp"
+                android:text="Save"
+                app:cornerRadius="20dp"
+                android:gravity="center"
+                android:background="@drawable/background_parimary"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</ScrollView>

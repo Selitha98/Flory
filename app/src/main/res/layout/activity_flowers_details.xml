@@ -7,11 +7,11 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@drawable/bg2"
-    tools:context=".DiseasesDetails">
+    tools:context=".FlowersDetails">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/detailTitle"
+        android:id="@+id/flowerTitle"
         android:text="Title"
         android:layout_marginTop="14dp"
         android:textSize="24sp"
@@ -21,20 +21,20 @@
     <ImageView
         android:layout_width="400dp"
         android:layout_height="300dp"
-        android:id="@+id/detailImage"
+        android:id="@+id/flowerImage"
         android:padding="8dp"
         android:layout_gravity="center"
         android:src="@drawable/upload_bg"
         android:scaleType="fitXY"/>
 
     <TextView
-        android:id="@+id/detailDesc"
+        android:id="@+id/scienceName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:padding="20dp"
-        android:text="Description"
+        android:text="Scientifically Name"
         android:textColor="@color/lavender"
         android:textSize="18sp" />
 
@@ -43,9 +43,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:padding="20dp"
-        android:text="Treatments"
+        android:text="Description"
         android:layout_gravity="center"
-        android:id="@+id/detailTreat"
+        android:id="@+id/flowerDetails"
         android:textSize="18sp"
         android:textColor="@color/lavender"/>
 

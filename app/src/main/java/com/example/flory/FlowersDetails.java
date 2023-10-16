@@ -17,10 +17,10 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 
-public class DiseasesDetails extends AppCompatActivity {
+public class FlowersDetails extends AppCompatActivity {
 
-    TextView detailTitle,detailDesc,detailTreat;
-    ImageView detailImage;
+    TextView flowerTitle,scienceName,flowerDetails;
+    ImageView flowerImage;
     FloatingActionButton deleteButton, editButton;
     String key = "";
     String imageUrl = "";
@@ -28,61 +28,54 @@ public class DiseasesDetails extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_diseases_details);
+        setContentView(R.layout.activity_flowers_details);
 
-        detailTitle = findViewById(R.id.detailTitle);
-        detailDesc = findViewById(R.id.detailDesc);
-        detailTreat = findViewById(R.id.detailTreat);
-        detailImage = findViewById(R.id.detailImage);
+        flowerTitle = findViewById(R.id.flowerTitle);
+        scienceName = findViewById(R.id.scienceName);
+        flowerDetails = findViewById(R.id.flowerDetails);
+        flowerImage = findViewById(R.id.flowerImage);
         deleteButton = findViewById(R.id.deleteButton);
         editButton = findViewById(R.id.editButton);
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null){
-            detailDesc.setText(bundle.getString("Description"));
-            detailTitle.setText(bundle.getString("Title"));
-            detailTreat.setText(bundle.getString("Treatments"));
+            flowerTitle.setText(bundle.getString("Title"));
+            scienceName.setText(bundle.getString("Scientifically Name"));
+            flowerDetails.setText(bundle.getString("Description"));
             key = bundle.getString("Key");
             imageUrl = bundle.getString("Image");
-            Glide.with(this).load(bundle.getString("Image")).into(detailImage);
+            Glide.with(this).load(bundle.getString("Image")).into(flowerImage);
         }
 
         deleteButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Flower Diseases");
+                final DatabaseReference reference = FirebaseDatabase.getInstance().getReference("Flowers");
                 FirebaseStorage storage = FirebaseStorage.getInstance();
                 StorageReference storageReference = storage.getReferenceFromUrl(imageUrl);
                 storageReference.delete().addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
                         reference.child(key).removeValue();
-                        Toast.makeText(DiseasesDetails.this, "Disease Deleted", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(getApplicationContext(), Diseases.class));
+                        Toast.makeText(FlowersDetails.this, "Flower Deleted", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(getApplicationContext(), Flowers.class));
                         finish();
                     }
                 });
             }
         });
 
-
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(DiseasesDetails.this, UpdateDiseases.class)
-                        .putExtra("Title", detailTitle.getText().toString())
-                        .putExtra("Description", detailDesc.getText().toString())
-                        .putExtra("Treatments", detailTreat.getText().toString())
+                Intent intent = new Intent(FlowersDetails.this, FlowersUpdate.class)
+                        .putExtra("Title", flowerTitle.getText().toString())
+                        .putExtra("Scientifically Name", scienceName.getText().toString())
+                        .putExtra("Description", flowerDetails.getText().toString())
                         .putExtra("Image", imageUrl)
                         .putExtra("Key", key);
                 startActivity(intent);
             }
         });
-
-
-
-
     }
-
 }
-

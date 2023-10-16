@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.util.Log;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -38,7 +39,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
         Glide.with(context).load(dataList.get(position).getDiseasePhoto()).into(holder.recImage);
         holder.recTitle.setText(dataList.get(position).getDiseaseTitle());
         holder.recDesc.setText(dataList.get(position).getDiseaseDescription());
-//        holder.recTreat.setText(dataList.get(position).getDiseaseTreeatement());
         holder.recCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -66,7 +66,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyViewHolder> {
 
 class MyViewHolder extends RecyclerView.ViewHolder{
     ImageView recImage;
-    TextView recTitle, recDesc, recTreat;
+    TextView recTitle, recDesc;
     CardView recCard;
     public MyViewHolder(@NonNull View itemView) {
         super(itemView);
@@ -74,6 +74,5 @@ class MyViewHolder extends RecyclerView.ViewHolder{
         recCard = itemView.findViewById(R.id.recCard);
         recTitle = itemView.findViewById(R.id.recTitle);
         recDesc = itemView.findViewById(R.id.recDesc);
-//        recTreat = itemView.findViewById(R.id.recTreat);
     }
 }

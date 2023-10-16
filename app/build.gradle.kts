@@ -39,6 +39,7 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.google.firebase:firebase-auth:22.1.2")
     implementation ("com.google.firebase:firebase-firestore:21.4.3")
+    implementation ("com.google.firebase:firebase-database:latest_version")
     implementation("org.tensorflow:tensorflow-lite-support:0.1.0")
     implementation("org.tensorflow:tensorflow-lite-metadata:0.1.0")
     implementation("com.google.firebase:firebase-database-ktx:20.2.2")

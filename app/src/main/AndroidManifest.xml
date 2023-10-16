@@ -8,6 +8,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -20,32 +21,52 @@
         android:theme="@style/Theme.Flory"
         tools:targetApi="31">
         <activity
+            android:name=".FlowersDetails"
+            android:exported="false" />
+        <activity
+            android:name=".FlowersUpdate"
+            android:exported="false" />
+        <activity
+            android:name=".FlowersUpload"
+            android:exported="false" />
+        <activity
+            android:name=".UserDetails"
+            android:exported="true" />
+        <activity
+            android:name=".UserData"
+            android:exported="false" />
+        <activity
+            android:name=".UsersUpload"
+            android:exported="true" />
+        <activity
+            android:name=".Users"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".UpdateDiseases"
             android:exported="false" />
         <activity
             android:name=".DiseasesDetails"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".UploadDiseases"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".AgroPathologist"
             android:exported="false" />
         <activity
             android:name=".Flowers"
-            android:exported="false" />
-        <activity
-            android:name=".Users"
-            android:exported="true" />
-        <activity
-            android:name=".Diseases"
-            android:exported="true">
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Diseases"
+            android:exported="true" />
         <activity
             android:name=".Prediction"
             android:exported="false" />
@@ -63,7 +84,7 @@
             android:exported="true" />
         <activity
             android:name=".Register"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

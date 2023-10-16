@@ -54,15 +54,15 @@ public class AdminHome extends AppCompatActivity {
         });
 
 
-        admin_h_user_icon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AdminHome.this, Users.class);
-                startActivity(intent);
-                overridePendingTransition(R.anim.slide_out_right, R.anim.slide_in_left);
-                finish();
-            }
-        });
+//        admin_h_user_icon.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent intent = new Intent(AdminHome.this, UsersView.class);
+//                startActivity(intent);
+//                overridePendingTransition(R.anim.slide_out_right, R.anim.slide_in_left);
+//                finish();
+//            }
+//        });
 
 
         admin_h_diseases_icon.setOnClickListener(new View.OnClickListener() {
